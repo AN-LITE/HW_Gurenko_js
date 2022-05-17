@@ -2,7 +2,7 @@
 
 
 
-const counter = () => {
+const counter = (num) => {
 
     let i = 0;
 
@@ -56,14 +56,9 @@ const counter = () => {
 
     const getStatistic = () => {
 
-        return {
-            
-            'Вызовы ':'',
+        
 
-            ' Вызовы функции сложения ' :  resultInc.increseCount,
-            ' Вызовы функции вычитания ' : resultDec.decreseCount,
-            ' Текущее значние ' : i
-        }
+        return `Вызовы : \n * Вызовы функции сложения : ${resultInc.increseCount}\n * Вызовы функции вычитания : ${resultDec.decreseCount}\n * Текущее значние : ${i}`
 
     }
 
